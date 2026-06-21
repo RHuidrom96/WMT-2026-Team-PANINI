@@ -182,24 +182,6 @@ HALL_LEN_RATIO_LOW  = 0.4
 HALL_LEN_RATIO_HIGH = 2.5
 HALL_COPY_RATIO     = 0.8
 
-# ─── Plot colours (one per system within a pipeline) ─────────────────────────
-SYSTEM_COLORS = {
-    "baseline": "#C44E52",
-    "r1":       "#4C72B0",
-    "exp1":     "#55A868",
-    "exp2":     "#DD8452",
-    "exp3":     "#8172B2",
-    "exp4":     "#937860",
-}
-SYSTEM_LABELS = {
-    "baseline": "Baseline (zero-shot IT2-1B)",
-    "r1":       "R1 (DoRA fine-tuned)",
-    "exp1":     "Exp-1 (+BT)",
-    "exp2":     "Exp-2 (+BT+FT)",
-    "exp3":     "Exp-3 (+BT+FT+Iter)",
-    "exp4":     "Exp-4 (+BT+FT+Iter+Noise)",
-}
-
 # ─── Make required directories on import ─────────────────────────────────────
 for _pid in ALL_PIPELINES:
     for _d in [
@@ -211,6 +193,7 @@ for _pid in ALL_PIPELINES:
         adapter_dir(_pid, "exp2_bt_ft"),
         adapter_dir(_pid, "exp3_bt_ft_iter"),
         adapter_dir(_pid, "exp4_noise"),
+        adapter_dir(_pid, "step5e_subword"), #step5e_subword_reg.py
     ]:
         os.makedirs(_d, exist_ok=True)
 
