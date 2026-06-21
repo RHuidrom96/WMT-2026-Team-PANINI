@@ -45,4 +45,3 @@ Resumable by default — already-trained adapters and completed evaluations are 
 - Scores: `outputs/all_scores.json` (key: `exp5_<pipeline>`)
 
 ---
-*More experiments and pipeline details to be added in future updates.*
