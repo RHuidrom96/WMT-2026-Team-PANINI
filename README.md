@@ -1,10 +1,10 @@
 # WMT-2026-Team-PANINI
 
-# Manipuri MT — IndicTrans2 1B Fine-tuning (Exp-5: BT+FT+Iter+SubwordReg)
+# Manipuri MT — IndicTrans2 1B Fine-tuning (BT+FT+Iter+SubwordReg)
 
 Low-resource machine translation between English and Manipuri, built on **IndicTrans2 1B** with **DoRA/LoRA** fine-tuning via PEFT.
 
-This repo contains **Exp-5: BT + FT + Iterative Pseudo-labelling + Subword Regularisation** — the final augmentation experiment in the series, combining back-translation, forward translation, and iterative pseudo-labelled data with training-time subword regularisation on top of a fine-tuned base adapter.
+This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisation** — the final augmentation experiment in the series, combining back-translation, forward translation, and iterative pseudo-labelled data with training-time subword regularisation on top of a fine-tuned base adapter.
 
 ## Overview
 
