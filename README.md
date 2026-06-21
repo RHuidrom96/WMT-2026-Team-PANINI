@@ -2,7 +2,7 @@
 
 # Manipuri MT — IndicTrans2 1B Fine-tuning (BT+FT+Iter+SubwordReg)
 
-Low-resource machine translation between English and Manipuri, built on **IndicTrans2 1B** with **DoRA/LoRA** fine-tuning via PEFT.
+Low-resource machine translation between English and Manipuri, built on **IndicTrans2 1B** with **LoRA** fine-tuning via PEFT.
 
 This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisation** — the final augmentation experiment in the series, combining back-translation, forward translation, and iterative pseudo-labelled data with training-time subword regularisation on top of a fine-tuned base adapter.
 
