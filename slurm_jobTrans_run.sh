@@ -1,10 +1,10 @@
 #!/bin/bash
 
-LOG_FILE="SOTA.train_5e.txt"
+LOG_FILE="SOTA.file_5e.txt"
 
 # Activate conda properly
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate mt_env
+conda activate nmt
 
 export CUDA_VISIBLE_DEVICES=0
 export TOKENIZERS_PARALLELISM=false
@@ -26,5 +26,5 @@ export TOKENIZERS_PARALLELISM=false
 
 
 # ✅ Correct argument passing
-python /home/vikas_blackwell/vikas/IT2_ft/uni_dir/rs_lora3/step5e_subword_reg.py --pipeline A B C D 2>&1 | tee -a $LOG_FILE
+python step5e_subword_reg.py --pipeline A B C D 2>&1 | tee -a $LOG_FILE
 
