@@ -44,7 +44,7 @@ def _pick_start_adapter(pid: str) -> str:
             return path
     raise FileNotFoundError(
         f"No adapter found for pipeline {pid}. "
-        f"Run at least step3_train_dora.py --pipeline {pid} first."
+        f"Run at least step3_train_lora.py --pipeline {pid} first."
     )
 
 
