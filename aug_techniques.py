@@ -88,7 +88,7 @@ def _load_it2_model(pipeline_id: str, adapter_path: str | None = None):
         if not os.path.isdir(adapter_path):
             raise FileNotFoundError(
                 f"Adapter not found at {adapter_path}. "
-                f"Run step3_train_dora.py --pipeline {pipeline_id} first."
+                f"Run step3_train_lora.py --pipeline {pipeline_id} first."
             )
         print(f"  [IT2] Attaching adapter: {adapter_path}")
         model = PeftModel.from_pretrained(base, adapter_path)
