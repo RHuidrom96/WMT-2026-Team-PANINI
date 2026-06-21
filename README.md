@@ -17,7 +17,7 @@ This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisati
 | File | Purpose |
 |---|---|
 | `config.py` | Central configuration (paths, hyperparameters) |
-| `step5e_subword_reg.py` | Exp-5 (BT+FT+Iter+SubwordReg) experiment runner |
+| `step5e_subword_reg.py` | BT+FT+Iter+SubwordReg experiment runner |
 | `aug_techniques.py` | BT / FT / iterative pseudo-labelling generators |
 | `aug_utils.py` | Shared helper utilities |
 | `aug_finetune_eval.py` | Fine-tune + evaluation runner |
