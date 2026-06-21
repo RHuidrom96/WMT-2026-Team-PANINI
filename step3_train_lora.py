@@ -1,7 +1,7 @@
 """
 step3_train_dora.py — DoRA/LoRA Fine-tuning of IndicTrans2 1B  (resumable)
 ─────────────────────────────────────────────────────────────────────────────
-Encoder-decoder fine-tuning with rsLoRA adapters.
+Encoder-decoder fine-tuning with rsLoRA adapters..
 """
 
 import os, gc, argparse, warnings, shutil, glob, re
