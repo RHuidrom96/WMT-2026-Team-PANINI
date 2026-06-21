@@ -71,13 +71,6 @@ def split_path(pipeline_id: str, split: str) -> str:
 
 # ─── Adapter / checkpoint dirs (one per pipeline) ────────────────────────────
 def adapter_dir(pipeline_id: str, exp: str = "r1") -> str:
-    """
-    exp: "r1"             → initial DoRA fine-tune
-         "exp1_bt"        → Exp-1 BT
-         "exp2_bt_ft"     → Exp-2 BT+FT
-         "exp3_bt_ft_iter"→ Exp-3 BT+FT+Iter
-         "exp4_noise"     → Exp-4 noise injection
-    """
     return os.path.join("./checkpoints", f"pipeline_{pipeline_id}", exp)
 
 # ─── Augmentation cache dirs (one sub-dir per pipeline) ──────────────────────
