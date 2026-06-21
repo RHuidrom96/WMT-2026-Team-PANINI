@@ -33,7 +33,7 @@ pip install git+https://github.com/VarunGumma/IndicTransToolkit.git
 ## Usage
 
 ```bash
-python step5e_subword_reg.py --pipeline A
+python step5e_subword_reg.py --pipeline A or B or C or D
 ```
 
 Resumable by default — already-trained adapters and completed evaluations are skipped automatically.
