@@ -1,1 +1,49 @@
 # WMT-2026-Team-PANINI
+
+# Manipuri MT — IndicTrans2 1B Fine-tuning (Exp-5: BT+FT+Iter+SubwordReg)
+
+Low-resource machine translation between English and Manipuri, built on **IndicTrans2 1B** with **DoRA/LoRA** fine-tuning via PEFT.
+
+This repo contains **Exp-5: BT + FT + Iterative Pseudo-labelling + Subword Regularisation** — the final augmentation experiment in the series, combining back-translation, forward translation, and iterative pseudo-labelled data with training-time subword regularisation on top of a fine-tuned base adapter.
+
+## Overview
+
+- **Base model:** IndicTrans2 1B (encoder-decoder seq2seq)
+- **Adapter method:** rsLoRA (PEFT)
+- **Preprocessing:** `IndicTransToolkit.processor.IndicProcessor`
+- **Metrics:** BLEU, chrF, chrF++, COMET, TER
+
+## Files
+
+| File | Purpose |
+|---|---|
+| `config.py` | Central configuration (paths, hyperparameters) |
+| `step5e_subword_reg.py` | Exp-5 (BT+FT+Iter+SubwordReg) experiment runner |
+| `aug_techniques.py` | BT / FT / iterative pseudo-labelling generators |
+| `aug_utils.py` | Shared helper utilities |
+| `aug_finetune_eval.py` | Fine-tune + evaluation runner |
+
+
+## Requirements
+
+```bash
+pip install torch transformers datasets peft sacrebleu unbabel-comet pandas numpy openpyxl
+pip install git+https://github.com/VarunGumma/IndicTransToolkit.git
+```
+
+## Usage
+
+```bash
+python step5e_subword_reg.py --pipeline A
+```
+
+Resumable by default — already-trained adapters and completed evaluations are skipped automatically.
+
+## Output
+
+- Adapter: `checkpoints/pipeline_<ID>/exp5_subword_reg/`
+- Predictions: `outputs/pipeline_<ID>/preds_exp5_subword_reg.csv`
+- Scores: `outputs/all_scores.json` (key: `exp5_<pipeline>`)
+
+---
+*More experiments and pipeline details to be added in future updates.*
