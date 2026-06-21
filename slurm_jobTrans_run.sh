@@ -16,7 +16,7 @@ echo "=====================================" | tee -a $LOG_FILE
 
 # GPU info
 nvidia-smi | tee -a $LOG_FILE
-export HF_TOKEN="hf_key_use_it"
+export HF_TOKEN="hf_token_key_use_it"
 
 # Optional but recommended
 export TOKENIZERS_PARALLELISM=false
