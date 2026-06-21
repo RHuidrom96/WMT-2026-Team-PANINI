@@ -400,7 +400,7 @@ def _train_pipeline(pipeline_id, aug_df, dev_df, adapter_out_dir,
     if not os.path.isdir(start_adapter_dir):
         raise FileNotFoundError(
             f"Start adapter not found at '{start_adapter_dir}'. "
-            f"Run step3_train_dora.py --pipeline {pipeline_id} first."
+            f"Run step3_train_lora.py --pipeline {pipeline_id} first."
         )
     print(f"  Attaching start adapter from {start_adapter_dir} (is_trainable=True) ...")
     model = PeftModel.from_pretrained(base, start_adapter_dir, is_trainable=True)
