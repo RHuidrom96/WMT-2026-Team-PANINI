@@ -21,8 +21,7 @@ This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisati
 | `aug_techniques.py` | BT / FT / iterative pseudo-labelling generators |
 | `aug_utils.py` | Shared helper utilities |
 | `aug_finetune_eval.py` | Fine-tune + evaluation runner |
-| `checkpoints` | https://drive.google.com/drive/folders/1hdxzx2XpsKXWEBNqDU42P8DqKFsNcENr?usp=sharing |
-
+| `checkpoints` | https://drive.google.com/drive/folders/1PYGYSo-m9HrrJ5DNGjUb0evZtM7qH3_4?usp=sharing |
 
 ## Requirements
 
