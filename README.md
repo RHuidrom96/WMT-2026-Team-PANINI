@@ -27,6 +27,7 @@ This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisati
 ## Requirements
 
 ```bash
+pip install requirements.txt
 pip install torch transformers datasets peft sacrebleu unbabel-comet pandas numpy openpyxl
 pip install git+https://github.com/VarunGumma/IndicTransToolkit.git
 ```
