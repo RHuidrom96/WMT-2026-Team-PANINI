@@ -40,7 +40,7 @@ def _make_steps(pipelines: list) -> list:
         },
         {
             "name":   "step3",
-            "script": "step3_train_dora.py",
+            "script": "step3_train_lora.py",
             "args":   ["--pipeline"] + pipelines,
             "outputs": [os.path.join(adapter_dir(p, "r1"), "adapter_config.json")
                         for p in pipelines],
