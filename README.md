@@ -11,7 +11,6 @@ This repo contains **BT + FT + Iterative Pseudo-labelling + Subword Regularisati
 - **Base model:** IndicTrans2 1B (encoder-decoder seq2seq)
 - **Adapter method:** rsLoRA (PEFT)
 - **Preprocessing:** `IndicTransToolkit.processor.IndicProcessor`
-- **Metrics:** BLEU, chrF, chrF++, COMET, TER
 
 ## Files
 
