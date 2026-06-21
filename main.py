@@ -206,7 +206,7 @@ def main():
     pipelines = args.pipeline
     all_steps = _make_steps(pipelines)
 
-    banner("MANIPURI MT PIPELINE — IndicTrans2 1B + DoRA")
+    banner("MANIPURI MT PIPELINE — IndicTrans2 1B + LoRA")
     print(f"  Started    : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"  Pipelines  : {pipelines}")
     print(f"  Working dir: {os.getcwd()}")
