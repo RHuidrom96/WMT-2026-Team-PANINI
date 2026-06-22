@@ -34,13 +34,13 @@ pip install git+https://github.com/VarunGumma/IndicTransToolkit.git
 ## Usage
 
 ```bash
+
 python step5e_subword_reg.py --pipeline A or B or C or D
 ```
 
-Resumable by default — already-trained adapters and completed evaluations are skipped automatically.
-
 ## Output
 
+- test_data:  `outputs/pipeline_<ID>/test.xlsx`  
 - Adapter: `checkpoints/pipeline_<ID>/exp5_subword_reg/`
 - Predictions: `outputs/pipeline_<ID>/preds_exp5_subword_reg.csv`
 - Scores: `outputs/all_scores.json` (key: `exp5_<pipeline>`)
